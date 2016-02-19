@@ -3,8 +3,7 @@ function PCA()
 % To generate eigenfaces by using ORLTrain.mat
 % Input Parameter: none
 
-%load in face training images
-%load myArray.mat
+%load the data matrix
 
 load testData.mat
 dTrainPCA = double(data);
@@ -40,5 +39,5 @@ eigenvaluesT = d(index);
 
 %----------------------------------------------------
 
-   
+% this is to save into directory folder "gray test" 
 save([pwd,'\gray test\ORLtest.mat'],'eigenfacesT','eigenvaluesT','avgfaceT')
